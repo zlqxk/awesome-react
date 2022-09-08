@@ -1,0 +1,27 @@
+{
+  "name": "awesome-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .ts,.tsx --fix --quiet ./src",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.36.2",
+    "esbuild": "^0.15.7",
+    "eslint": "^8.23.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2",
+    "@typescript-eslint/eslint-plugin": "^5.36.2"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "*.{ts,tsx}": "pnpm lint"
+  }
+}
