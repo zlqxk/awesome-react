@@ -1,5 +1,5 @@
 import { aaa } from './test'
 
-const a = aaa
+const a: number = aaa
 console.log('a: ', a)
 export default 1

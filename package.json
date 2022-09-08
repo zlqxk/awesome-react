@@ -2,10 +2,13 @@
   "name": "awesome-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint --ext .ts,.tsx --fix --quiet ./src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "node scripts/build.js",
+    "type": "tsc --emitDeclarationOnly"
   },
   "keywords": [],
   "author": "",
